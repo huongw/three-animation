@@ -10,14 +10,19 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
 h2,
-ul {
+ul,
+audio {
   position: absolute;
 }
-
 
 h2 {
   bottom: 20%;
@@ -31,16 +36,19 @@ ul {
   font-size: 0.8em;
   top: 5%;
   left: 5%;
-  width: 500px;
+  width: 400px;
 }
 
 h1 {
   font-size: 3em;
-  top: 1%;
+  top: 1.5%;
+  font-family: 'Vollkorn', serif;
 }
 
-iframe {
+audio {
+  left: 0;
   bottom: 0;
+  width: 100%;
 }
 
 li {
@@ -53,4 +61,21 @@ li {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.desktop-view {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #canvas,
+  h1,
+  h2,
+  ul,
+  iframe {
+    display: none;
+  }
+  .desktop-view {
+    display: block;
+  }
 }

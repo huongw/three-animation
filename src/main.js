@@ -24,7 +24,7 @@ const sizes = {
 // light
 const light = new THREE.PointLight(0x6495ED, 1, 100);
 light.position.set(0, 10, 10);
-light.intensity = 1.25;
+light.intensity = 1.5;
 scene.add(light);
 
 // camera
@@ -71,10 +71,10 @@ const loop = () => {
 loop();
 
 // timeline
-
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 tl.fromTo(mesh.scale, { z: 0, x: 0, y: 0 }, { z: 1, x: 1, y: 1 });
 tl.fromTo("h1", { opacity: 0 }, { opacity: 1 });
+tl.fromTo("ul", { opacity: 0 }, { opacity: 1 });
 
 // animate colors
 let mouseDown = false;
