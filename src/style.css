@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 1;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+ul {
+  position: absolute;
+}
+
+
+h2 {
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  font-size: 1em;
+}
+
+h1,
+ul {
+  font-size: 0.8em;
+  top: 5%;
+  left: 5%;
+  width: 500px;
+}
+
+h1 {
+  font-size: 3em;
+  top: 1%;
+}
+
+iframe {
+  bottom: 0;
+}
+
+li {
+  margin: 1em 0;
+  list-style-type: none;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
